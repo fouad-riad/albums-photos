@@ -10,7 +10,7 @@ import { Photos } from '../moduls/modello-photos';
 export class AlbumsPhotosService {
 
   constructor(private http:HttpClient) { }
-
+ 
   getAlbums(): Observable<Albums[]>{
     return this.http.get<Albums[]>('https://jsonplaceholder.typicode.com/albums');
   }
